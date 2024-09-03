@@ -1,0 +1,185 @@
+body{
+    background-color: #424441;
+    color: rgb(245, 245, 245);
+}
+
+.maincont{
+    background-color: bisque;
+}
+
+.carrosel {
+    display: flex;
+    overflow-x: scroll; /* Permite a rolagem horizontal */
+    scroll-snap-type: x mandatory;
+    width: 500px; /* Ajuste a largura do contêiner conforme necessário */
+}
+.carrosel img {
+    scroll-snap-align: center;
+    flex-shrink: 0; /* Impede que as imagens encolham */
+    width: 100%; /* Ajusta a largura das imagens para caber no contêiner */
+    height: auto;
+}
+.carrosel::-webkit-scrollbar {
+    display: none;
+}
+.carrosel {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.carrer{
+    text-align: center;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.final{
+    /* position: absolute; */
+    bottom: 2%;
+    width: 100%; /* Ajusta a largura da linha */
+    background-color: rgb(30, 156, 25);
+}
+
+.topic{
+    background-color:rgb(30, 156, 25);
+    width: 20%;
+}
+
+nav {
+    background-color: #37d151;
+}
+
+nav ul {
+    /*display: table; - removido*/
+    display:flex; /*flex aqui - novo*/
+    justify-content:space-around; /*e distribuição de espaço aqui - novo*/
+    width: 100%;
+}
+
+nav ul li {
+    list-style-type: none;
+    /*display: table-cell; - removido
+    width: 25%; - removido*/
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+}
+
+nav ul li:hover {
+    background-color: rgb(126, 248, 126);
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+.container{
+    height: 60vh;
+    background-color: #58585a;
+    padding: 30px;
+}
+
+.exp table td{
+    display: flex; 
+    flex-direction: column;
+    width: 70%;
+    margin-left: 40px;
+    padding-left: 10px;
+}
+
+.exp table th{
+    display: flex;
+    margin-left: 40px;
+}
+
+.divisoria{
+    padding-left: 30px;
+}
+
+.ant{
+    text-decoration: none;
+    color: white;
+}
+
+.ant:hover{
+    color:  black;
+    background-color: rgb(57, 199, 35);
+}
+.prox{
+    text-decoration: none;
+    color: white;
+    margin-left: 80%;
+}
+.prox:hover{
+    color:  black;
+    background-color: rgb(57, 199, 35);
+}
+
+.nome{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.divisoria{
+    text-align: center;
+    color: #37d151;
+}
+
+.data{
+    color: #d2db7b;
+}
+
+.contact td{
+    display: flex;
+    width: 100%;
+}
+
+.contact td a{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: #37d151;
+    
+}
+
+.contact td a:hover{
+    display: block;
+    width: 100%;
+    text-decoration: underline;
+    color: #37bfd1;
+}
+
+
+form input{
+    display: flex;
+    width: 95%;
+    margin: 5px;
+    margin-bottom: 5px;
+}
+
+.forms{
+    text-align: center;
+    width: 50%;
+    background-color: #676e64;
+}
+
+button{
+    background-color: #37d151;
+    border: 0;
+    margin: auto;
+    border-radius: 10%;
+}
+
+button:hover{
+    background-color: #37bfd1;
+    border: 0;
+    margin: auto;
+    border-radius: 10%;
+}
