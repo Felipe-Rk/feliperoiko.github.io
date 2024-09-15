@@ -1,0 +1,179 @@
+body{
+    background-color: #424441;
+    color: rgb(245, 245, 245);
+}
+.traini{
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+nav {
+    background-color: #37d151;
+}
+nav ul {
+    display:flex; 
+}
+nav ul li {
+    list-style-type: none;
+    width: 100%;
+}
+nav ul li:hover {
+    background-color: rgb(126, 248, 126);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+.topic-certif{
+    background-color:rgb(30, 156, 25);
+    width: 20%;
+}
+
+.certif{
+    background-color: rgb(10, 158, 163); 
+    width: 8%;
+}
+
+.carrosel {   
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    width: 260px; /* Ajuste a largura do contêiner conforme necessário */
+}
+.carrosel {
+    display: flex;
+    overflow-x: scroll; /* Permite a rolagem horizontal */
+    scroll-snap-type: x mandatory;
+    width: 500px; /* Ajuste a largura do contêiner conforme necessário */
+}
+.carrosel img {
+    scroll-snap-align: center;
+    flex-shrink: 0; /* Impede que as imagens encolham */
+    width: 100%; /* Ajusta a largura das imagens para caber no contêiner */
+    height: auto;
+}
+.carrosel::-webkit-scrollbar {
+    display: none;
+}
+.carrosel {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.final-train{
+    /* position: fixed; */
+    width: 99%; /* Ajusta a largura da linha */
+    background-color: rgb(30, 156, 25);
+    position: absolute;
+}
+
+.ant{
+    text-decoration: none;
+    color: white;
+}
+
+.ant:hover{
+    color:  black;
+    background-color: rgb(57, 199, 35);
+}
+.prox{
+    text-decoration: none;
+    color: white;
+    /* margin-left: 80%; */
+    position: absolute;
+    right: 0;
+}
+.prox:hover{
+    color:  black;
+    background-color: rgb(57, 199, 35);
+}
+
+@media screen and (max-width: 992px) {
+* {
+    box-sizing: border-box;
+}
+.topic-certif{
+    background-color:rgb(30, 156, 25);
+    width: 50%;
+}
+
+.carrosel {
+    
+    display: flex;
+    /* overflow-x: scroll; Permite a rolagem horizontal */
+    scroll-snap-type: x mandatory;
+    width: 280px; /* Ajuste a largura do contêiner conforme necessário */
+}
+
+.traini{
+    width: 98%;
+
+}
+.certif{
+    background-color: rgb(10, 158, 163); 
+    width: 28%;
+}
+
+.Cnome {
+    display:initial;
+    text-decoration: solid;
+}
+.dataF { 
+    display:initial;
+}
+.dataP {
+    display: flex;
+}
+.Fnome {
+    display:flex;
+}
+.tabF {
+    width: 90%;
+}
+
+.cursos {
+    display: initial;
+    text-align: justify;
+
+    width: 20%;
+}
+.tabF tr th {
+    width: 50%;
+    padding-left: 0px;
+}
+
+.prox {
+    position: absolute;
+    right: 0;
+}
+.ant {
+    text-decoration: none;
+    color: white;
+    margin-left: 1%;
+}
+
+.final-train{
+    /* position: fixed; */
+    width: 99%; /* Ajusta a largura da linha */
+    background-color: rgb(30, 156, 25);
+    position: absolute;
+}
+
+}
+
+@media screen and (max-width: 667px) {
+    .final-train{
+        /* position: fixed; */
+        width: 96%; /* Ajusta a largura da linha */
+        background-color: rgb(30, 156, 25);
+        position: absolute;
+    }
+    
+}

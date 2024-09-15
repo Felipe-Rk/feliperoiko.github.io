@@ -1,0 +1,235 @@
+body{
+    background-color: #424441;
+    color: rgb(245, 245, 245);
+}
+
+nav {
+    background-color: #37d151;
+}
+
+nav ul {
+    display:flex; /*flex aqui - novo*/
+    justify-content:space-around; /*e distribuição de espaço aqui - novo*/
+    width: 100%;
+}
+
+nav ul li {
+    list-style-type: none;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+}
+
+nav ul li:hover {
+    background-color: rgb(126, 248, 126);
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+.contact{
+    margin-left: 40%;
+    margin-top: 5%;
+}
+
+.contact td{
+    display: flex;
+    width: 100%;
+    text-align: center;
+}
+.cel{
+    margin-left: 9%;
+}
+.contact a{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: #37d151;
+    
+}
+
+.contact td a:hover{
+    display: block;
+    width: 100%;
+    text-decoration: underline;
+    color: #37bfd1;
+}
+
+form input{
+    display: flex;
+    width: 95%;
+    margin:12px;
+    margin-bottom: 5px;
+}
+
+.forms{
+    text-align: center;
+    width: 50%;
+    background-color: #676e64;
+    margin-left: 25%;
+    margin-top: 13%;
+}
+
+button{
+    background-color: #37d151;
+    border: 0;
+    margin: auto;
+    border-radius: 10%;
+    margin-bottom: 5px;
+}
+
+.forms h4{
+    margin: 2%;
+}
+
+button:hover{
+    background-color: #37bfd1;
+    border: 0;
+    margin: auto;
+    border-radius: 10%;
+    margin-bottom: 5px;
+}
+.final{
+    /* position: absolute; */
+    bottom: 2%;
+    width: 99%; /* Ajusta a largura da linha */
+    background-color: rgb(30, 156, 25);
+}
+
+.ant{
+    text-decoration: none;
+    color: white;
+}
+
+.ant:hover{
+    color:  black;
+    background-color: rgb(57, 199, 35);
+}
+.prox{
+    text-decoration: none;
+    color: white;
+    /* margin-left: 80%; */
+    position: absolute;
+    right: 0;
+}
+.prox:hover{
+    color:  black;
+    background-color: rgb(57, 199, 35);
+}
+
+@media screen and (max-width: 992px) {
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    width: 87%;
+}
+
+nav ul {
+    display:flex; /*flex aqui - novo*/
+    justify-content:space-around; /*e distribuição de espaço aqui - novo*/
+    width: 80%;
+}
+
+.contact{
+    margin-left: 21%;
+    margin-top: 5%;
+    margin-top: 12%;
+}
+
+.forms{
+    width:70%;
+    margin: 40px;
+    margin-top: 40%;
+    border-radius: 3%;
+}
+
+form input{
+    display: flex;
+    width: 90%;
+    margin:12px;
+    margin-bottom: 5px;
+}
+
+.final {
+    position: fixed;
+    width: 85%; /* Ajusta a largura da linha */
+    background-color: rgb(30, 156, 25);
+    margin-bottom: 25%;
+}
+
+.prox {
+    position: absolute;
+    right: 0;
+}
+.ant {
+    text-decoration: none;
+    color: white;
+    margin-left: 1%;
+}
+
+}
+
+@media screen and (max-width: 667px) {
+
+.contact{
+    margin-left: 21%;
+    margin-top: 5%;
+    margin-top: 12%;
+}    
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    display:flex; /*flex aqui - novo*/
+    justify-content:space-around; /*e distribuição de espaço aqui - novo*/
+    width: 90%;
+}
+
+
+.final {
+    position: fixed;
+    width: 96%; /* Ajusta a largura da linha */
+    background-color: rgb(30, 156, 25);
+    margin-bottom: 0%;
+}
+
+.prox {
+    position: absolute;
+    right: 0;
+}
+.ant {
+    text-decoration: none;
+    color: white;
+    margin-left: 1%;
+}
+
+.forms{
+    width:70%;
+    margin: 55px;
+    margin-top: 40%;
+    border-radius: 3%;
+}
+
+form input{
+    display: flex;
+    width: 90%;
+    margin:12px;
+    margin-bottom: 5px;
+}
+
+
+
+}

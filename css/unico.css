@@ -7,25 +7,7 @@ body{
     background-color: bisque;
 }
 
-.carrosel {
-    display: flex;
-    overflow-x: scroll; /* Permite a rolagem horizontal */
-    scroll-snap-type: x mandatory;
-    width: 500px; /* Ajuste a largura do contêiner conforme necessário */
-}
-.carrosel img {
-    scroll-snap-align: center;
-    flex-shrink: 0; /* Impede que as imagens encolham */
-    width: 100%; /* Ajusta a largura das imagens para caber no contêiner */
-    height: auto;
-}
-.carrosel::-webkit-scrollbar {
-    display: none;
-}
-.carrosel {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
+
 .carrer{
     text-align: center;
     margin-right: 2%;
@@ -86,22 +68,6 @@ nav ul li a:hover {
     padding: 30px;
 }
 
-.exp table td{
-    display: flex; 
-    flex-direction: column;
-    width: 70%;
-    margin-left: 40px;
-    padding-left: 10px;
-}
-
-.exp table th{
-    display: flex;
-    margin-left: 40px;
-}
-
-.divisoria{
-    padding-left: 30px;
-}
 
 .ant{
     text-decoration: none;
@@ -115,7 +81,9 @@ nav ul li a:hover {
 .prox{
     text-decoration: none;
     color: white;
-    margin-left: 80%;
+    /* margin-left: 80%; */
+    position: absolute;
+    right: 0;
 }
 .prox:hover{
     color:  black;
@@ -127,70 +95,12 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-.divisoria{
-    text-align: center;
-    color: #37d151;
-}
-
-.data{
-    color: #d2db7b;
-}
-
-.contact td{
-    display: flex;
-    width: 100%;
-}
-
-.contact td a{
-    display: block;
-    width: 100%;
-    text-decoration: none;
-    color: #37d151;
-    
-}
-
-.contact td a:hover{
-    display: block;
-    width: 100%;
-    text-decoration: underline;
-    color: #37bfd1;
-}
 
 
-form input{
-    display: flex;
-    width: 95%;
-    margin: 5px;
-    margin-bottom: 5px;
-}
 
-.forms{
-    text-align: center;
-    width: 50%;
-    background-color: #676e64;
-}
 
-button{
-    background-color: #37d151;
-    border: 0;
-    margin: auto;
-    border-radius: 10%;
-}
 
-button:hover{
-    background-color: #37bfd1;
-    border: 0;
-    margin: auto;
-    border-radius: 10%;
-}
-.certif{
-    background-color: rgb(10, 158, 163); 
-    width: 8%;
-}
-.topic-certif{
-    background-color:rgb(30, 156, 25);
-    width: 20%;
-}
+
 @media screen and (max-width: 992px) {
     * {
         box-sizing: border-box;
@@ -258,58 +168,18 @@ button:hover{
         width: 70%;
     }
 
-    .divisoria{
-        text-align: center;
-        color: #37d151;
-    }
-    .divisoria{
-        padding-left: 20px;
-    }
-    .exp {
-        overflow-x: auto; /* Adiciona um scroll horizontal se necessário */
-        -webkit-overflow-scrolling: touch; /* Melhora a rolagem em dispositivos móveis */
-    }
+
     
     table {
         width: 100%; /* Garante que a tabela ocupe 100% da largura do contêiner */
         max-width: 100%; /* Garante que a tabela não ultrapasse a largura do contêiner */
     }
-    .last-table{
-        margin-bottom: 20px;
-    }
 
-    .topic-exp{
-        background-color: rgb(30, 156, 25);
-        width: 65%;
-        margin-left: 1%;
-    }
-    .formacao{
-        width: 65%;
-    }
 
-    .certif{
-        background-color: rgb(10, 158, 163); 
-        width: 25%;
-    }
-    .carrosel {
-        display: flex;
-        overflow-x: scroll; /* Permite a rolagem horizontal */
-        scroll-snap-type: x mandatory;
-        width: 320px; /* Ajuste a largura do contêiner conforme necessário */
-    }
-    .topic-certif{
-        background-color:rgb(30, 156, 25);
-        width: 50%;
-    }
-    .traini{
-        width: 80%;
-    }
-    .final-train{
-        position: fixed;
-        width: 78%; /* Ajusta a largura da linha */
-        background-color: rgb(30, 156, 25);
-    }  
 }
+
+
+
 
 @media screen and (max-width: 667px) {
     .container{
@@ -381,4 +251,5 @@ button:hover{
         width: 75%;
         margin-left: 1%;
     }
+
 }

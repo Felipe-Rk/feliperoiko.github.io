@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
-    <link rel="stylesheet" type="text/css" href="../css/unico.css">
+    <link rel="stylesheet" type="text/css" href="../css/contact.css">
 </head>
 <nav>
     <ul>
@@ -16,16 +16,15 @@
 <body>
 <div>
     <table class="contact">
-        <td>Telefone: (41)99619-6508</td>
+        <td class="cel">Celular: (41)99619-6508</td>
         <td>Email: roiko2010@gmail.com</td>
         <td></td>
-        <td><a href="www.linkedin.com/in/felipe-roiko">LinkedIn</a></td>
-        <td><a href="github.com/Felipe-Rk">Portifólio</a></td>
-        <td><a href="https://wa.me/+5541996196508">Whastsapp</a></td>
+        <td><a href="https://linkedin.com/in/felipe-roiko" target="_blank">LinkedIn</a></td>
+        <td><a href="https://github.com/Felipe-Rk" target="_blank">Portifólio</a></td>
+        <td><a href="https://wa.me/+5541996196508" target="_blank">Whastsapp</a></td>
     </table>
 </div>
-<div>
-    
+<div class="container">
     <form class="forms">
         <h4>Prencha o formulário com sua solicitação para contato</h4>
         <input type="text" name="nome" placeholder="Digite seu nome aqui">
@@ -41,6 +40,13 @@
 </div>
 </body>
 <script>
+    document.addEventListener('keydown',function(e){
+        if(e.keyCode === 13){
+            e.preventDefault();
+        }
+        });
+
+
     document.getElementById('enviar').addEventListener('click', function() {
         var nome = document.getElementById('nome').value;
         var email = document.getElementById('email').value;

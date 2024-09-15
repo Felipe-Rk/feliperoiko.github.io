@@ -1,0 +1,183 @@
+body{
+    background-color: #424441;
+    color: rgb(245, 245, 245);
+}
+nav {
+    background-color: #37d151;
+}
+
+nav ul {
+    /*display: table; - removido*/
+    display:flex; /*flex aqui - novo*/
+    justify-content:space-around; /*e distribuição de espaço aqui - novo*/
+    width: 97%;
+}
+
+nav ul li {
+    list-style-type: none;
+    text-align: center;
+    font-weight: bold;
+    width: 97%;
+}
+
+nav ul li:hover {
+    background-color: rgb(126, 248, 126);
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    width: 50%;
+    height: 50%;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+.topic-exp{
+    background-color:rgb(30, 156, 25);
+    width: 20%;
+}
+
+.exp table td{
+    display: flex; 
+    flex-direction: column;
+    width: 70%;
+    margin-left: 20px;
+    padding-left: 10px;
+}
+
+.exp table th{
+    display: flex;
+    margin-left: 20px;
+}
+
+.divisoria{
+    padding-left: 30px;
+}
+
+.data{
+    color: #d2db7b;
+}
+.final{
+    /* position: absolute; */
+    bottom: 2%;
+    width: 100%; /* Ajusta a largura da linha */
+    background-color: rgb(30, 156, 25);
+}
+.ant{
+    text-decoration: none;
+    color: white;
+}
+.ant:hover{
+    color:  black;
+    background-color: rgb(57, 199, 35);
+}
+.prox{
+    text-decoration: none;
+    color: white;
+    /* margin-left: 80%; */
+    position: absolute;
+    right: 0;
+}
+.prox:hover{
+    color:  black;
+    background-color: rgb(57, 199, 35);
+}
+
+@media screen and (max-width: 992px) {
+
+.last-table{
+    margin-bottom: 20px;
+}
+
+.topic-exp{
+    background-color: rgb(30, 156, 25);
+    width: 65%;
+    margin-left: 1%;
+}
+
+.divisoria{
+    text-align: center;
+    color: #37d151;
+}
+.divisoria{
+    padding-left: 20px;
+}
+.exp {
+    overflow-x: auto; /* Adiciona um scroll horizontal se necessário */
+    -webkit-overflow-scrolling: touch; /* Melhora a rolagem em dispositivos móveis */
+    width: 97%;
+    text-align: justify;
+}
+
+.final {
+    position: fixed;
+    width: 90%; /* Ajusta a largura da linha */
+    background-color: rgb(30, 156, 25);
+}
+
+.prox {
+    position: absolute;
+    right: 0;
+}
+.ant {
+    text-decoration: none;
+    color: white;
+    margin-left: 1%;
+}
+
+nav {
+    background-color: #37d151;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+
+nav ul li {
+    list-style-type: none;
+    text-align: center;
+    font-weight: bold;
+    width: 70%;
+}
+
+}
+
+@media screen and (max-width: 667px) {
+
+.topic-exp{
+    background-color: rgb(30, 156, 25);
+    width: 73%;
+    margin-left: 1%;
+}
+
+.final {
+    position: fixed;
+    width: 95%; /* Ajusta a largura da linha */
+    background-color: rgb(30, 156, 25);
+}
+
+.divisoria{
+    padding-left: 15px;
+}
+
+.exp table td{
+    display: flex; 
+    flex-direction: column;
+    width: 70%;
+    margin-left: 12px;
+    padding-left: 10px;
+    text-align: justify;
+}
+
+.exp table th{
+    display: flex;
+    margin-left: 10px;
+}
+
+}
