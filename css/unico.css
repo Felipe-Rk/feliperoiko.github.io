@@ -24,10 +24,12 @@ body{
 .topic{
     background-color:rgb(30, 156, 25);
     width: 20%;
+    text-align: center;
+    margin-left: 40%;
 }
 
 nav {
-    background-color: #37d151;
+    background-color:rgb(30, 156, 25);
 }
 
 nav ul {
@@ -72,6 +74,7 @@ nav ul li a:hover {
 .ant{
     text-decoration: none;
     color: white;
+    left: 1%;
 }
 
 .ant:hover{
@@ -81,9 +84,8 @@ nav ul li a:hover {
 .prox{
     text-decoration: none;
     color: white;
-    /* margin-left: 80%; */
     position: absolute;
-    right: 0;
+    right: 1%;
 }
 .prox:hover{
     color:  black;

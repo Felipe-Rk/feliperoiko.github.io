@@ -10,6 +10,7 @@
     <ul>
         <li><a href="experience.html">Experiências</a></li>
         <li><a href="training.html">Formação</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
         <li><a href="../index.html">Inicio</a></li>
     </ul>
 </nav>
@@ -27,15 +28,15 @@
 <div class="container">
     <form class="forms">
         <h4>Prencha o formulário com sua solicitação para contato</h4>
-        <input type="text" name="nome" placeholder="Digite seu nome aqui">
-        <input type="email" name="email" placeholder="Digite seu email aqui">
-        <input type="tel" name="telefone" placeholder="Digite seu telefone aqui">
-        <input type="text" name="solicitação" placeholder="Digite sua Solicitação aqui">
+        <input id="nome" type="text" name="nome" placeholder="Digite seu nome aqui">
+        <input id="email" type="email" name="email" placeholder="Digite seu email aqui">
+        <input id="telefone" type="tel" name="telefone" placeholder="Digite seu telefone aqui">
+        <input id="solicitacao" type="text" name="solicitação" placeholder="Digite sua Solicitação aqui">
         <button id="enviar">Enviar</button>
     </form>
 </div>
 <div class="final"style="position: absolute;">
-    <a class="ant" href="experience.html"><<< pagina anterior</a>
+    <a class="ant" href="projetos.html"><<< pagina anterior</a>
     <a class="prox" href="../index.html">inicio >>></a>
 </div>
 </body>
@@ -47,16 +48,22 @@
         });
 
 
-    document.getElementById('enviar').addEventListener('click', function() {
-        var nome = document.getElementById('nome').value;
-        var email = document.getElementById('email').value;
-        var telefone = document.getElementById('telefone').value;
-        var solicitacao = document.getElementById('solicitacao').value;
+    document.getElementById('enviar').addEventListener('click', function(event) {
+        event.preventDefault(); 
+        const nome = document.getElementById('nome').value;
+        const email = document.getElementById('email').value;
+        const telefone = document.getElementById('telefone').value;
+        const solicitacao = document.getElementById('solicitacao').value;
     
-        var mensagem = `Nome: ${nome}\nEmail: ${email}\nTelefone: ${telefone}\nSolicitação: ${solicitacao}`;
-        var url = `https://api.whatsapp.com/send?phone=+5541996196508&text=${encodeURIComponent(mensagem)}`;
-    
-        window.open(url, '_blank');
+        const mensagem = `Nome: ${nome}\nEmail: ${email}\nTelefone: ${telefone}\nSolicitação: ${solicitacao}`;
+        const encodedMessage = encodeURIComponent(mensagem);
+        const url = `https://api.whatsapp.com/send/?phone=+5541996196508&text=${encodedMessage}`;
+
+        window.open(url, '_blank').focus();
+
+   
+
     });
+
     </script>
 </html>

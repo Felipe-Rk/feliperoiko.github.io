@@ -1,0 +1,161 @@
+body{
+    background-color: #424441;
+    color: rgb(245, 245, 245);
+}
+
+nav {
+    background-color: #37d151;
+}
+
+nav ul {
+    display:flex; /*flex aqui - novo*/
+    justify-content:space-around; /*e distribuição de espaço aqui - novo*/
+    width: 100%;
+}
+
+nav ul li {
+    list-style-type: none;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+}
+
+nav ul li:hover {
+    background-color: rgb(126, 248, 126);
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+.final{
+    /* position: absolute; */
+    bottom: 2%;
+    width: 99%; /* Ajusta a largura da linha */
+    background-color: rgb(30, 156, 25);
+}
+
+.ant{
+    text-decoration: none;
+    color: white;
+}
+
+.ant:hover{
+    color:  black;
+    background-color: rgb(57, 199, 35);
+}
+.prox{
+    text-decoration: none;
+    color: white;
+    /* margin-left: 80%; */
+    position: absolute;
+    right: 0;
+}
+.prox:hover{
+    color:  black;
+    background-color: rgb(57, 199, 35);
+}
+
+.container{
+    margin-top: 2%;
+    padding: 8%;
+    text-align: center;
+    background-color: #58585a;
+}
+
+.container h1{
+    margin-top: 1%;
+    font-size: 100px;
+}
+.container h1:hover{
+    color: #37d151;
+}
+
+.container h2:hover{
+    color: rgb(226, 213, 28);
+    font-size: 80px;
+}
+
+@media screen and (max-width: 992px) {
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    width: 87%;
+}
+
+nav ul {
+    display:flex; /*flex aqui - novo*/
+    justify-content:space-around; /*e distribuição de espaço aqui - novo*/
+    width: 80%;
+}
+
+.final {
+    position: fixed;
+    width: 85%; /* Ajusta a largura da linha */
+    background-color: rgb(30, 156, 25);
+    margin-bottom: 25%;
+}
+
+.prox {
+    position: absolute;
+    right: 0;
+}
+.ant {
+    text-decoration: none;
+    color: white;
+    margin-left: 1%;
+}
+.container{
+    margin-top: 50%;
+}
+    
+}
+
+@media screen and (max-width: 667px) {
+    
+    nav {
+        width: 100%;
+    }
+    
+    nav ul {
+        display:flex; /*flex aqui - novo*/
+        justify-content:space-around; /*e distribuição de espaço aqui - novo*/
+        width: 90%;
+    }
+    
+    
+    .final {
+        position: fixed;
+        width: 96%; /* Ajusta a largura da linha */
+        background-color: rgb(30, 156, 25);
+        margin-bottom: 0%;
+    }
+    
+    .prox {
+        position: absolute;
+        right: 0;
+    }
+    .ant {
+        text-decoration: none;
+        color: white;
+        margin-left: 1%;
+    }
+    .container{
+        margin-top: 20%;
+    }
+    .container h2:hover{
+        color: rgb(226, 213, 28);
+        font-size: 40px;
+        
+    }
+}
